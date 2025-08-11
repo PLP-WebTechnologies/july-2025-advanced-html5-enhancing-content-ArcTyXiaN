@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> wk2 assignment</title>
+    <meta charset="UTC-8" />
+    <meta name="author" content="Obaloluwa" />
+</head>
+
+<body>
+    <h3>List of Faculties</h3>
+    <ol>
+        <li>Faculty of Science</li>
+        <li>Faculty of Social Science</li>
+        <li>Faculty of Art</li>
+        <li>Faculty of Education</li>
+    </ol>
+    <h3> Table of Departments </h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Faculty</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Faculty of Science</td>
+                <td>Department of Computer Science</td>
+            </tr>
+            <tr>
+                <td>Faculty of Science</td>
+                <td>Department of Mathematics</td>
+            </tr>
+            <tr>
+                <td>Faculty of Social Science</td>
+                <td>Department of Sociology</td>
+            </tr>
+            <tr>
+                <td>Faculty of Social Science</td>
+                <td>Department of Psychology</td>
+            </tr>
+            <tr>
+                <td>Faculty of Art</td>
+                <td>Department of History</td>
+            </tr>
+            <tr>
+                <td>Faculty of Art</td>
+                <td>Department of English</td>
+            </tr>
+            <tr>
+                <td>Faculty of Education</td>
+                <td>Department of Educational Psychology</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Computer Science Stack</h2>
+    <ul>
+        <li>HTML<img src="images/html.png" width="75" height="80" alt="html_logo"></li>
+        <li>CSS<img src="images/CSS.png" width="75" height="80" alt="css_logo"></li>
+        <li>Python <img src="images/python.png" width="75" height="80" alt="python_logo"></li>
+    </ul><br>
+    <!---Forms-->
+    <form>
+        <fieldset>
+            <legend> Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="user_email" autocomplete="on" required><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user_password" autocomplete="off" required><br>
+
+            <label for="course"></label>
+            <select id="course" name="user_course" required>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Statistics"> Statistics</option>
+                <option value="Mathematics">Mathematics</option>
+            </select><br>
+
+            <label for="preferences"> Preferences</label><br>
+            <input type="checkbox" name="user_preferences[]" id="pref_html" value="HTML">HTML<br>
+            <input type="checkbox" name="user_preferences[]" id="pref_css" value="CSS">CSS<br>
+            <input type="checkbox" name="user_preferences[]" id="pref_python" value="Python">Python<br>
+
+            <label for="state_of_origin"> State Of Origin</label><br>
+            <input type="text" id="state_of_origin" name="user_state_of_origin" placeholder="enter state of origin"><br>
+
+            <label for="nationality"> nationality</label><br>
+            <input type="text" id="nationality" name="user_nationality" value="Nigeria" readonly><br>
+
+            <label for="submit"> Submit</label>
+            <input type="submit" id="submit" name="user_submit" value="Submit"><br>
+
+        </fieldset>
+        </form>
+        
+</body>
+
+</html>
